@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+//GCD or GCF or HCF
+public class Main {
+   public static void main(String[] args){
+       Scanner in = new Scanner(System.in);
+       int f = in.nextInt();
+       int s = in.nextInt();
+      int HCF=0;
+      for(int i =1; i<f && i<s; i++){
+          if(f%i==0 && s%i==0) HCF = i;
+      }
+      System.out.println("HCF :"+HCF);
+       
+       
+       // Least Common Multiple
+       int LCM = f*s/HCF;
+        System.out.println("LCM :"+LCM);
+
+       
+   }
+   
+       
+}

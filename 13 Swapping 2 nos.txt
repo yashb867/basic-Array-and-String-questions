@@ -1,0 +1,40 @@
+
+//SWAPPING 2 NO.s
+
+import java.util.Scanner; 
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter the two numbers a & b to be swapped :");
+		Scanner in = new Scanner(System.in);
+		int a = in.nextInt();
+		int b = in.nextInt();
+		
+		//1).using temp variable
+		int temp = a;
+		a = b;
+ 		b = temp;
+ 		System.out.println("Swappped nos are : a= " +a+" & b= "+b);
+
+
+        //2).using XOR
+        // a = a^b;
+        // b = a^b;
+        // a = a^b;
+        // System.out.println("Swappped nos are : a= " +a+" & b= "+b);
+        
+        
+        //3).using multiplication & division
+        // a = a*b;
+        // b = a/b;
+        // a = a/b;
+        // System.out.println("Swappped nos are : a= " +a+" & b= "+b);
+        
+        
+        //4).using addition and subtraction
+        // a = a + b;
+        // b = a - b;
+        // a = a - b;
+        // System.out.println("Swappped nos are : a= " +a+" & b= "+b);
+	}
+}

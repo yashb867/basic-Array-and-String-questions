@@ -1,0 +1,23 @@
+//finding all the duplicate characters in a string
+public class Main
+{
+	public static void main(String[] args) {
+	    String str = "Great responsibility";
+	    int n = str.length();
+	    char[] string = str.toCharArray();
+	    int count;
+	    
+	    for(int i=0; i<n; i++){
+	        count =1;
+	        for(int j=i+1; j<n; j++){
+	            if(string[i]==string[j] && string[i]!='0' && string[i]!=' ' ){
+	                count++;
+	                string[j] = '0';
+	            }
+	        }
+	       if(count > 1 && string[i]!='0' ) System.out.println(string[i]); 
+	    }
+	    
+	}
+	
+}

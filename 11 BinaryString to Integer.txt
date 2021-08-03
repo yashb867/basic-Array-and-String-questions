@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+//BinaryString to Integer
+public class Main {
+   public static void main(String[] args){ 
+       
+       Scanner in = new Scanner(System.in);
+       String str = in.next();
+       
+       
+       System.out.println(Integer.parseInt(str,2));
+
+   }
+   
+       
+}

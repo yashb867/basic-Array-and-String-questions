@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+//fibbonacci of n terms
+public class Main {
+   public static void main(String[] args){
+       Scanner in = new Scanner(System.in);
+       int n = in.nextInt();
+      int first = 0;
+      int sec = 1;
+      int i =0;
+       System.out.print(first+" ");
+       System.out.print(sec+" ");
+       int temp =0;  
+      while(i!=n-2){
+          temp = first + sec;
+         System.out.print(temp+" ");
+         first = sec;
+         sec = temp;
+         i++;
+      }
+   }
+    
+}         
+
+//upto nth term
+
+// import java.util.Scanner;
+
+// public class Main {
+//   public static void main(String[] args){
+//       Scanner in = new Scanner(System.in);
+//       int n = in.nextInt();
+//       int first = 0;
+//       int sec = 1;
+//       int i =0;
+//       System.out.print(first+" ");
+//       System.out.print(sec+" ");
+//       int temp =0;  
+//       while(temp!=n){
+//           temp = first + sec;
+//          System.out.print(temp+" ");
+//          first = sec;
+//          sec = temp;
+//          i++;
+//       }
+//   }
+    
+// }

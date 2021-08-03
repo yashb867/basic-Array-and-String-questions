@@ -1,0 +1,19 @@
+//determine whether one string is a rotation of another
+public class Main
+{
+	public static void main(String[] args) {
+	    String s1 = "abcde";
+	    String s2 = "deabc";
+	    
+	    if(s1.length() != s2.length() ){
+	        System.out.println("Second string is not a rotation of first string");
+	    }
+	    else{
+	        s1 = s1.concat(s1);            //s1 = s1+s1;
+	        int x = s1.indexOf(s2);
+	        //System.out.println(x);
+	        if(x>0) System.out.println("Second string is a rotation of first string");
+	        else System.out.println("Second string is not a rotation of first string");
+	    }
+	}
+}

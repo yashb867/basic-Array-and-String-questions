@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    
+       System.out.println(reverseString("Dream big"));
+	}
+	
+	 public static String reverseString(String str){  
+        StringBuilder sb=new StringBuilder(str);  
+        sb.reverse();  
+        return sb.toString();  
+     }  
+}

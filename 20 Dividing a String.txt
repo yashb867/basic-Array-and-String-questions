@@ -1,0 +1,29 @@
+//Dividing a String in given no of parts
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in); 
+		System.out.println("Enter the String & no of parts to divide it in :");
+		
+		String str = in.next();
+		int n = in.nextInt();
+		String [] res = new String[n];
+		int len = str.length();
+		int indx =0;
+		
+		if(len % n == 0){
+		    for(int i =0; i< len; i+=(len/n)){
+		        String temp = str.substring(i,i+(len/n) );
+		        res[indx] = temp;
+		        indx++;
+		      //  System.out.println("Yesssssssssss be divided");
+		    }
+		    
+		    for(int i=0; i< res.length; i++){
+		        System.out.println(res[i] );
+		    }
+		}else System.out.println("Can't be divided");
+	}
+}

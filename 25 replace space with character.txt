@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+//replace the spaces of a string with a specific character
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    
+	    String string = "Once in a blue moon";   
+	    System.out.println("Enter the char to replace the spaces with :");
+            String s = in.next();    
+            char ch = s.charAt(0);
+            
+        string =  string.replace(' ', ch);
+        
+        System.out.println(string);
+	}
+}

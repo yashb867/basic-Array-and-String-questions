@@ -1,0 +1,26 @@
+
+//String concatenation
+
+import java.util.Scanner; 
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+	// type 1 : using concatenation operator i.e. + operator
+        // String str = "Yash" + "Bhokare";
+        // System.out.println(str);
+        
+        
+        // String s=50+30+"Sachin"+40+40;  
+        // System.out.println(s);//80Sachin4040  
+        
+        
+        //type 2 : using concat() 
+        String s1 = "Yash";
+        String s2 = "Bhokare";
+        String str = s1.concat(s2);
+       // String str = s1 + s2;
+        System.out.println(str);
+	}
+}

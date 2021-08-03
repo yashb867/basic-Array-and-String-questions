@@ -1,0 +1,9 @@
+public class Main
+{
+	public static void main(String[] args) {
+
+		String str = "Remove white Spaces";
+		str = str.replaceAll(" ","");
+		System.out.println(str);
+	}
+}

@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    String str = "He has Great Power";
+	    int len = str.length();
+	    char[] sarr = new char[len];
+	    
+	    for(int i=0; i< len; i++){
+	        if((int)str.charAt(i) <96){
+	            char temp = str.charAt(i);
+	            sarr[i] = Character.toLowerCase(temp);
+
+	        }
+	        else{
+	            char temp = str.charAt(i);
+	            sarr[i] = Character.toUpperCase(temp);
+	        }
+	    }
+	   String res = String.valueOf(sarr);
+		System.out.println( res);
+	}
+}

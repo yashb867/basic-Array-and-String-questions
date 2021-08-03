@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+//Armstrong number
+public class Main {
+   public static void main(String[] args){ 
+       
+       int n = 1643;
+       int x =n, count = 0, sum=0;
+       while(x!=0){
+           count++;
+           x= x/10;
+       }
+       
+       while(n!=0){
+           int temp = n%10;
+           sum += Math.pow(temp,count);
+           n=n/10;
+       }
+       
+       System.out.println(sum);
+
+   }
+   
+       
+}

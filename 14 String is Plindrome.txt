@@ -1,0 +1,26 @@
+
+//String is Plindrome?
+
+import java.util.Scanner; 
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter the String to be checkedd :");
+		Scanner in = new Scanner(System.in);
+		String str = in.next();
+		
+		String s = new String(str.toLowerCase());                            //for case sensitivity
+		//StringBuilder s = new StringBuilder(str.toLowerCase());           //for case sensitivity
+        int last = s.length() -1;
+        boolean isPal = true;
+        for(int i=0; i<=last; i++){
+            if( s.charAt(i)!=s.charAt(last) ){
+                isPal = false;
+                System.out.println(s+" is not a Palindrome");
+                break;
+            }
+            last--;
+        }
+        if(isPal) System.out.println(s+" is a Palindrome!!!!!!!!!");
+	}
+}
